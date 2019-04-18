@@ -2,7 +2,14 @@
 {% block body_block %}
 <br>
 <br>
-<div class="jumbotron">
-  <h1> KLOOK Home Page <h1>
+<div class="container">
+  <br>
+  <h1> YOURS TO EXPLORE <h1>
+  <h3>Discover and book amazing things to do at exclusive prices </h3>
+  <br>
+  <form class="" action="{% url 'index' %}" method="">
+    <input type="text" name="" size="100" value="" placeholder="      Search by destination, activity or attraction">
+      <button class="button button3" >Search</button>
+  </form>
 <div>
 {% endblock %}

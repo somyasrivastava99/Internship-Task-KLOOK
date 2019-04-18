@@ -2,21 +2,23 @@
 {% block body_block  %}
 <br>
 <br>
-<div class="jumbotron">
-  <h1> Please Login!</h1>
+<div class="container">
+  <div class="lin">
+  <h1> Please Login</h1>
+  <br>
   <form class="" action="{% url 'first_app:user_login' %}" method="post">
     {% csrf_token %}
     <label for="username">
-      Username
+      Username &nbsp &nbsp
     </label>
-    <input type="text" name="username" value="" placeholder="Enter Username">
+    <input type="text" name="username" value="" placeholder="    Enter Username">
     <br>
-    <label for="password">Password</label>
-    <input type="password" name="password" value="" placeholder="Enter password">
+    <label for="password">Password &nbsp &nbsp</label>
+    <input type="password" name="password" value="" placeholder="     Enter password">
     <br>
-    <input type="submit" name="" value="Login">
-
+    <br>
+    <button class="button">Login </button>
   </form>
-
+</div>
 </div>
 {% endblock %}
